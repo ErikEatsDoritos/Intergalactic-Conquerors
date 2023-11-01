@@ -14,8 +14,8 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         
-        Instantiate(myprefab, new Vector2(Random.Range(0f, 5f), 2), Quaternion.identity);
-        Instantiate(prefab2, new Vector2(Random.Range(0f,5f), 2), Quaternion.identity);
+        Instantiate(myprefab, new Vector2(Random.Range(0f, 10f), 4), Quaternion.identity);
+        Instantiate(prefab2, new Vector2(Random.Range(0f,10f), 4), Quaternion.identity);
 
     }
 
@@ -25,6 +25,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
+
     }
 }
