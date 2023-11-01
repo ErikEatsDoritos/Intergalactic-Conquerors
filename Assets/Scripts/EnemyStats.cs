@@ -6,18 +6,19 @@ using UnityEngine;
 
 public class EnemyProperty : MonoBehaviour
 {
-    public GameObject tier1;
-    public GameObject tier2;
-    public GameObject tier3;
     class EnemyStats
     {
-        public int _health;
-        public int _dmg;
-        public int _maxHealth;
-        public int Tier;
+        [SerializeField()]
+        private int _health;
+        [SerializeField()]
+        private int _dmg;
+        [SerializeField()]
+        private int _maxHealth;
+        [SerializeField()]
+        private int Tier;
         
         
-        public EnemyStats(int tier, int health, int dmg)
+        public EnemyStats(int tier)
         {
             this.Tier = tier;
             if (this.Tier == 1)
@@ -36,6 +37,7 @@ public class EnemyProperty : MonoBehaviour
                 _maxHealth = 5;
                 _dmg = 3;
             }
+            _health = _maxHealth;
 
             
         }
@@ -63,10 +65,7 @@ public class EnemyProperty : MonoBehaviour
     {
         
 
-        int roll = Random.Range(0, 4);
-        if (roll == 1) Instantiate(tier1, new Vector2(Random.Range(0f, 10f), 4), Quaternion.identity);
-        else if (roll == 2) Instantiate(tier2, new Vector2(Random.Range(0f, 10f), 4), Quaternion.identity);
-        else if (roll == 3) Instantiate(tier3, new Vector2(Random.Range(0f, 10f), 4), Quaternion.identity);
+       
 
 
 
