@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyShip : MonoBehaviour
 {
     private int _damage = 2;
+    private int _health = 100;
     private Transform _enemyTransform;
     private GameObject _playerShip;
     private PlayerShip _playerInstance;
@@ -26,8 +27,7 @@ public class EnemyShip : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _playerShip = collision.gameObject;
-        _playerInstance = _playerShip.GetComponent<PlayerShip>();
+        _playerInstance = collision.gameObject.GetComponent<PlayerShip>();
 
         Attack();
         Debug.Log(_playerInstance.GetHealth());
