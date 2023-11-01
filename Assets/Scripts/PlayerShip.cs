@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class PlayerShip : MonoBehaviour
 {
+    private Bullet bulletClass;
     private float _speed = 5;
     private Transform playerTransform;
+    private Rigidbody2D rb;
     private int _health = 1;
     private bool _isAlive;
     private Vector3 _movement;
+    public GameObject bulletPrefab;
+    private float x;
+    private float y;
 
     //public PlayerShip(float speed)
     //{
@@ -21,17 +26,45 @@ public class PlayerShip : MonoBehaviour
     void Start()
     {
         playerTransform = GetComponent<Transform>();
+        bulletClass = bulletPrefab.GetComponent<Bullet>();
+        
     }
+
+    public void Shoot()
+    {
+ 
+         x = playerTransform.position.x;
+         y = playerTransform.position.y;
+         GameObject bulletObject = Instantiate(bulletPrefab, new Vector3(x, y, 0), playerTransform.rotation);
+         rb = bulletObject.GetComponent<Rigidbody2D>();
+         rb.AddForce(transform.up * bulletClass.GetSpeed());
+         Debug.Log("Pew");
+       
+    }
+
+    public void Move()
+    {
+        float x = Input.GetAxis("Horizontal");
+        _movement = new Vector3(x, 0, 0);
+        playerTransform.Translate(_movement * _speed * Time.deltaTime);
+    }
+
 
     // Update is called once per frame
     void Update()
     {
         //This way uses translate
+        if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Horizontal") < 0)
+        {
+            Move();
+        }
         
-        float x = Input.GetAxis("Horizontal");
+        if (Input.GetKeyDown("space"))
+        {
+            Shoot();
+        }
         //Debug.Log(x);
-        _movement = new Vector3(x, 0, 0);
-        playerTransform.Translate(_movement * _speed * Time.deltaTime);
+        
 
         //This way uses add force
 
@@ -42,6 +75,9 @@ public class PlayerShip : MonoBehaviour
         //}
 
     }
+
+
+    
 
     public void TakeDamage(int damage)
     {
