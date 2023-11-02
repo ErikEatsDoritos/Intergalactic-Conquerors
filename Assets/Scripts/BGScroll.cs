@@ -17,5 +17,10 @@ public class BGScroll : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.down * ScrollSpeed * Time.deltaTime);
+
+        if (transform.position.y < -24.97f)
+        {
+            transform.position = StartPosition;
+        }
     }
 }
