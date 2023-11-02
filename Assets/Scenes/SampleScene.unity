@@ -227,6 +227,14 @@ PrefabInstance:
       propertyPath: Tier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5019338597114960846, guid: 61b6248b9066e5740b20ecc9769f1c63, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019338597114960846, guid: 61b6248b9066e5740b20ecc9769f1c63, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5524481932026669797, guid: 61b6248b9066e5740b20ecc9769f1c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.47
@@ -274,6 +282,10 @@ PrefabInstance:
     - target: {fileID: 6986877518248624731, guid: 61b6248b9066e5740b20ecc9769f1c63, type: 3}
       propertyPath: m_Size.y
       value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986877518248624731, guid: 61b6248b9066e5740b20ecc9769f1c63, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7227876211570631337, guid: 61b6248b9066e5740b20ecc9769f1c63, type: 3}
       propertyPath: m_Name
