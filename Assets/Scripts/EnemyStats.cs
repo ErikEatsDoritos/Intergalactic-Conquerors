@@ -1,67 +1,133 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Windows;
 
+[System.Serializable]
 public class EnemyProperty : MonoBehaviour
 {
-    class EnemyStats
+    [SerializeField()]
+    private GameObject Bullet;
+    private Rigidbody2D rb;
+    private int _health;
+    private int _dmg;
+    private int _maxHealth;
+    [SerializeField()]
+    private int _tier;
+
+    public int GetHealth()
     {
-        public int _health;
-        public int _dmg;
-        public int _maxHealth;
-        public int Tier;
-         
-
-        public EnemyStats(int tier, int health, int dmg)
-        {
-            this.Tier = tier;
-            if (this.Tier == 1)
-            {
-                _maxHealth = 3;
-                _dmg = 1;
-            }
-            else if (this.Tier == 2)
-            {
-                _maxHealth = 4;
-                _dmg = 2;
-            }
-            else if (this.Tier == 3)
-            {
-                _maxHealth = 5;
-                _dmg = 3;
-            }
-            
-        }
-        public void TakeDamage(int damage)
-        {
-            _health -= damage;
-        }
-
-        public void Death()
-        {
-            _health = 0;
-        }
-
-        public int GetDmg()
-        {
-            return _dmg;
-        }
-
+        return _health;
     }
 
-
-    void Start()
+    public void Set_tier(int _tier)
     {
+        this._tier = _tier;
+    }
+
+    public int GetDmg()
+    {
+        return _dmg;
+    }
+
+    public void TakeDmg(int dmg)
+    {
+        _health -= dmg;
+    }
+
+    public void Attack()
+    {
+        Vector2 EnemyPos = transform.position;
+        EnemyPos.y -= 1;
+        Instantiate(Bullet, EnemyPos, Quaternion.identity);
+    }
+
+    IEnumerator SpawnProjectile()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(1, 3));
+            Attack();
+        }
         
     }
-       
+
+
+
+
+
+    private void Start()
+    {
+       if(_tier == 1)
+        {
+            _maxHealth = 1;
+            _dmg = 1;
+
+        }
+       else if (_tier == 2)
+        {
+            _maxHealth = 2;
+            _dmg = 2;
+
+        }
+       else if (_tier == 3)
+        {
+            _maxHealth = 3;
+            _dmg = 3;
+
+        }
+        this._health = this._maxHealth;
+        StartCoroutine(SpawnProjectile());
+
+
+
+
+
+
+
+
+
+    }
+
+    private void Update()
+    {
+        if (this._health <= 0)
+        {
+            Destroy(gameObject);
+        }
+        rb = GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(0, -0.5f);
+        
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
     
 
 
-    // Start is called before the first frame update
     
  
     
