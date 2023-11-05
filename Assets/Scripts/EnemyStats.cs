@@ -16,16 +16,16 @@ public class EnemyProperty : MonoBehaviour
     private int _dmg;
     private int _maxHealth;
     [SerializeField()]
-    private int Tier;
+    private int _tier;
 
     public int GetHealth()
     {
         return _health;
     }
 
-    public void SetTier(int tier)
+    public void Set_tier(int _tier)
     {
-        this.Tier = tier;
+        this._tier = _tier;
     }
 
     public int GetDmg()
@@ -40,44 +40,56 @@ public class EnemyProperty : MonoBehaviour
 
     public void Attack()
     {
-        
-        Instantiate(Bullet, new Vector2(5, 4), Quaternion.identity);
+        Vector2 EnemyPos = transform.position;
+        EnemyPos.y -= 1;
+        Instantiate(Bullet, EnemyPos, Quaternion.identity);
     }
 
-    
-    
+    IEnumerator SpawnProjectile()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(1, 3));
+            Attack();
+        }
+        
+    }
+
+
+
 
 
     private void Start()
     {
-       if(Tier == 1)
+       if(_tier == 1)
         {
             _maxHealth = 1;
             _dmg = 1;
 
         }
-       else if (Tier == 2)
+       else if (_tier == 2)
         {
             _maxHealth = 2;
             _dmg = 2;
 
         }
-       else if (Tier == 3)
+       else if (_tier == 3)
         {
             _maxHealth = 3;
             _dmg = 3;
 
         }
         this._health = this._maxHealth;
-        
-        
-
-        
+        StartCoroutine(SpawnProjectile());
 
 
-   
 
-        
+
+
+
+
+
+
     }
 
     private void Update()
@@ -89,6 +101,8 @@ public class EnemyProperty : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(0, -0.5f);
         
+
+
 
 
 

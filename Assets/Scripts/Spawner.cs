@@ -50,17 +50,17 @@ public class Spawner : MonoBehaviour
             
             if (_randomRoll == 1) 
             { 
-                Instantiate(Tier1, new Vector2(_xAxis, 4), Quaternion.identity);
+                Instantiate(Tier1, new Vector2(_xAxis, 6), Quaternion.identity);
                 Debug.Log("Rolled 1");
             }
             else if (_randomRoll == 2) 
             { 
-                Instantiate(Tier2, new Vector2(_xAxis, 4), Quaternion.identity);
+                Instantiate(Tier2, new Vector2(_xAxis, 6), Quaternion.identity);
                 Debug.Log("Rolled 2");
             }
             else if (_randomRoll == 3) 
             { 
-                Instantiate(Tier3, new Vector2(_xAxis, 4), Quaternion.identity);
+                Instantiate(Tier3, new Vector2(_xAxis, 6), Quaternion.identity);
                 Debug.Log("Rolled 3");
             }
             Set_xAxis(Random.Range(-10f, 10f));
