@@ -55,6 +55,19 @@ public class EnemyProperty : MonoBehaviour
         
     }
 
+    private void OntriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Boundary"))
+        {
+
+            Destroy(other.gameObject);
+        }
+        Debug.Log("Called Method");
+    }
+
+
+
+
 
 
 

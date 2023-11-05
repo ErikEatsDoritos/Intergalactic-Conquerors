@@ -17,4 +17,17 @@ public class Projectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(0, -2f);
     }
+
+    private void OntriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Boundary"))
+        {
+
+            Destroy(other.gameObject);
+        }
+        Debug.Log("Called Method");
+    }
+
+
+
 }

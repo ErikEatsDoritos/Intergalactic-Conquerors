@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 25
+        width: 71
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550379b1ce555f446bad664deb830803
+      internalID: -1965203875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 25
+        width: 70
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e69566abc05ea441b4b735514423c46
+      internalID: -879395958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_7
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 24
+        width: 70
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9e06322c175104abdb9249bf0e280e
+      internalID: -1012185910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_10
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 25
+        width: 70
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4700c2fec8a2eda4fb37f7a1bae8ccd7
+      internalID: 1307319968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 26
+        width: 71
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4ef0715671d204cb2e7e43be596c20
+      internalID: 2128481410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_16
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 25
+        width: 70
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486a5397e4f48234fb272754a447d895
+      internalID: -1165519261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_19
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 24
+        width: 70
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97efa37f4d03fc448b7905157d2550d
+      internalID: 545420849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_22
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 25
+        width: 70
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40945c9960fe58741b065db99249660f
+      internalID: 995757142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_25
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 26
+        width: 70
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a06ad507bc7ad4ca3316b6d3ef75d2
+      internalID: 1369708228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_28
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 25
+        width: 70
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d595cd740c7fa314f88ede5d0656b1f8
+      internalID: -1085935934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_31
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 24
+        width: 70
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd36e477a315224ea47e0285694da29
+      internalID: -519840600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Battlecruiser - Engine_34
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 25
+        width: 70
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46119baf231f3f94d9319df6b72098be
+      internalID: 1631435820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +384,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kla'ed - Battlecruiser - Engine_0: -1305133251
+      Kla'ed - Battlecruiser - Engine_1: -1965203875
+      Kla'ed - Battlecruiser - Engine_10: 1307319968
+      Kla'ed - Battlecruiser - Engine_11: -2101242574
+      Kla'ed - Battlecruiser - Engine_12: 358402472
+      Kla'ed - Battlecruiser - Engine_13: 2128481410
+      Kla'ed - Battlecruiser - Engine_14: 1752651153
+      Kla'ed - Battlecruiser - Engine_15: 1839370511
+      Kla'ed - Battlecruiser - Engine_16: -1165519261
+      Kla'ed - Battlecruiser - Engine_17: 366894038
+      Kla'ed - Battlecruiser - Engine_18: -677163762
+      Kla'ed - Battlecruiser - Engine_19: 545420849
+      Kla'ed - Battlecruiser - Engine_2: 1801734765
+      Kla'ed - Battlecruiser - Engine_20: 357962246
+      Kla'ed - Battlecruiser - Engine_21: -1789198637
+      Kla'ed - Battlecruiser - Engine_22: 995757142
+      Kla'ed - Battlecruiser - Engine_23: -1283593732
+      Kla'ed - Battlecruiser - Engine_24: -128769538
+      Kla'ed - Battlecruiser - Engine_25: 1369708228
+      Kla'ed - Battlecruiser - Engine_26: 1464193588
+      Kla'ed - Battlecruiser - Engine_27: 1187670331
+      Kla'ed - Battlecruiser - Engine_28: -1085935934
+      Kla'ed - Battlecruiser - Engine_29: 1264847183
+      Kla'ed - Battlecruiser - Engine_3: -140300342
+      Kla'ed - Battlecruiser - Engine_30: -969969245
+      Kla'ed - Battlecruiser - Engine_31: -519840600
+      Kla'ed - Battlecruiser - Engine_32: 477556433
+      Kla'ed - Battlecruiser - Engine_33: -1710756248
+      Kla'ed - Battlecruiser - Engine_34: 1631435820
+      Kla'ed - Battlecruiser - Engine_35: 77259737
+      Kla'ed - Battlecruiser - Engine_4: -879395958
+      Kla'ed - Battlecruiser - Engine_5: 1115448097
+      Kla'ed - Battlecruiser - Engine_6: 158767003
+      Kla'ed - Battlecruiser - Engine_7: -1012185910
+      Kla'ed - Battlecruiser - Engine_8: -1328390778
+      Kla'ed - Battlecruiser - Engine_9: 1293561231
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
