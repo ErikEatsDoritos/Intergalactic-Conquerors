@@ -172,4 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8535753929000865758, guid: 6dae99a1cd83b4348844c9e62da3af59, type: 3}
-  Tier: 3
+  _tier: 3
