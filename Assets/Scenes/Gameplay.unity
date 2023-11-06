@@ -636,7 +636,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fc5af015011ea3745b7f78ea1dd1049f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.217
+  m_Volume: 0.16
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -826,8 +826,4 @@ SceneRoots:
   - {fileID: 1915792879}
   - {fileID: 1402533027}
   - {fileID: 1713784299}
-<<<<<<< Updated upstream
   - {fileID: 1065153307}
-=======
-  - {fileID: 1442368115}
->>>>>>> Stashed changes
