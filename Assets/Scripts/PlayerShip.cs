@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class PlayerShip : MonoBehaviour
 {
+    private Color color;
+    private SpriteRenderer sr;
     private Bullet bulletClass;
-    private float _speed = 5;
-    private Transform playerTransform;
-    private Rigidbody2D rb;
-    private int _health = 1;
-    private bool _isAlive;
-    private Vector3 _movement;
+    private Rigidbody2D bulletRb;
     public GameObject bulletPrefab;
+    private Transform playerTransform;
+    private float _speed = 5;
+    private int _health = 1;
+    private float fireSpeed = 1.0f;
+    private float nextFire = 0.0f;
+    private Vector3 _movement;
+    private bool _isAlive;
     private float x;
     private float y;
 
@@ -26,18 +30,18 @@ public class PlayerShip : MonoBehaviour
     void Start()
     {
         playerTransform = GetComponent<Transform>();
+        sr = GetComponent<SpriteRenderer>();
         bulletClass = bulletPrefab.GetComponent<Bullet>();
-        
+
     }
 
     public void Shoot()
     {
- 
          x = playerTransform.position.x;
          y = playerTransform.position.y;
          GameObject bulletObject = Instantiate(bulletPrefab, new Vector3(x, y, 0), playerTransform.rotation);
-         rb = bulletObject.GetComponent<Rigidbody2D>();
-         rb.AddForce(transform.up * bulletClass.GetSpeed());
+         bulletRb = bulletObject.GetComponent<Rigidbody2D>();
+         bulletRb.AddForce(transform.up * bulletClass.GetSpeed());
          Debug.Log("Pew");
        
     }
@@ -53,14 +57,16 @@ public class PlayerShip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Time.time);
         //This way uses translate
         if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Horizontal") < 0)
         {
             Move();
         }
         
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") && Time.time > nextFire)
         {
+            nextFire = Time.time + fireSpeed;
             Shoot();
         }
         //Debug.Log(x);
@@ -82,11 +88,20 @@ public class PlayerShip : MonoBehaviour
     public void TakeDamage(int damage)
     {
         this._health -= damage;
+
         if (this._health < 0) {
             this._isAlive = false;
             Debug.Log(_isAlive);
         }
         
+    }
+
+    public IEnumerator ChangeColor()
+    {
+        Debug.Log("color");
+        sr.color = Color.red;
+        yield return new WaitForSeconds(0.20f);
+        sr.color = Color.white;
     }
 
     public int GetHealth()

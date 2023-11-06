@@ -6,13 +6,11 @@ public class EnemyShip : MonoBehaviour
 {
     private int _damage = 2;
     private int _health = 100;
-    private Transform _enemyTransform;
     private GameObject _playerShip;
     private PlayerShip _playerInstance;
 
     private void Start()
     {
-        _enemyTransform = GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -24,13 +22,17 @@ public class EnemyShip : MonoBehaviour
     public void Attack()
     {
         _playerInstance.TakeDamage(_damage);
+        StartCoroutine(_playerInstance.ChangeColor());
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _playerInstance = collision.gameObject.GetComponent<PlayerShip>();
-
-        Attack();
-        Debug.Log(_playerInstance.GetHealth());
+        if (collision.gameObject.GetComponent<PlayerShip>())
+        {
+            _playerInstance = collision.gameObject.GetComponent<PlayerShip>();
+            Attack();
+            Debug.Log(_playerInstance.GetHealth());
+        }
     }
 
 }
