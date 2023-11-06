@@ -413,6 +413,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
 --- !u!1 &1265032028
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +498,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1402533026
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,4 +765,9 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1915792879}
   - {fileID: 1402533027}
+<<<<<<< Updated upstream
   - {fileID: 1265032030}
+=======
+  - {fileID: 1713784299}
+  - {fileID: 1442368115}
+>>>>>>> Stashed changes
