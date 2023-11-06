@@ -12,14 +12,17 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private GameObject Tier2;
     private float _xAxis; 
-    private int _randomRoll; 
+    private int _randomRoll;
+    private float _SpawnOffset;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(SpawnGameObjects()); // StartCorutine allows to call the delayed function 
         _randomRoll = Random.Range(1, 4);
-        _xAxis = Random.Range(-10f, 10f);
+        _xAxis = Random.Range(-8f, 8f);
+        _SpawnOffset = Random.Range(-2f, 2f);
     }
 
     public float Get_xAxis()
@@ -29,7 +32,8 @@ public class Spawner : MonoBehaviour
 
     public void Set_xAxis(float value)
     {
-        _xAxis = value;
+        
+        _xAxis = value + _SpawnOffset;
     }
 
     public void FlipCoin(int value)
@@ -63,6 +67,7 @@ public class Spawner : MonoBehaviour
                 Instantiate(Tier3, new Vector2(_xAxis, 6), Quaternion.identity);
                 Debug.Log("Rolled 3");
             }
+            _SpawnOffset = Random.Range(-2f, 2f);
             Set_xAxis(Random.Range(-10f, 10f));
             FlipCoin(Random.Range(1, 4));
             Debug.Log("called method");
