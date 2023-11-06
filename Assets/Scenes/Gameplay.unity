@@ -605,7 +605,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fc5af015011ea3745b7f78ea1dd1049f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 559c232a43caebe41870ce54786f604e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.16
   m_Pitch: 1
@@ -789,6 +789,177 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &183788096705291261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1670087771485655835, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_Name
+      value: Strength Gem PowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.94818497
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376510742442100492, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbb8300b6efc52d4b98175d8dc94deaf, type: 3}
+--- !u!1001 &784290991075196492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3714720176464581131, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_Name
+      value: Health Gem PowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.6644583
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5629606
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.94818497
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943918607616107670, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+--- !u!1001 &4027371290146972068
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.94818497
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711809111506040173, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730736607734208551, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+      propertyPath: m_Name
+      value: Speed Gem PowerUp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -798,3 +969,6 @@ SceneRoots:
   - {fileID: 1402533027}
   - {fileID: 1713784299}
   - {fileID: 1442368115}
+  - {fileID: 183788096705291261}
+  - {fileID: 784290991075196492}
+  - {fileID: 4027371290146972068}
