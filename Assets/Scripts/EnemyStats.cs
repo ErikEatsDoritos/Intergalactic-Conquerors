@@ -18,20 +18,6 @@ public class EnemyProperty : MonoBehaviour
     [SerializeField()]
     private int _tier;
 
-    public int GetHealth()
-    {
-        return _health;
-    }
-
-    public void Set_tier(int _tier)
-    {
-        this._tier = _tier;
-    }
-
-    public int GetDmg()
-    {
-        return _dmg;
-    }
 
     public void TakeDmg(int dmg)
     {
@@ -49,13 +35,23 @@ public class EnemyProperty : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(1, 3));
+            yield return new WaitForSeconds(Random.Range(2, 4));
             Attack();
         }
         
     }
 
- 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        if (collision.tag == "Projectile")
+        {
+            TakeDmg(1);
+
+        }
+    }
+
+
 
 
 
@@ -84,8 +80,9 @@ public class EnemyProperty : MonoBehaviour
             _dmg = 3;
 
         }
+        
         this._health = this._maxHealth;
-        StartCoroutine(SpawnProjectile());
+        StartCoroutine(SpawnProjectile()); // starts a curoutine so bullets can be shot at random intervals
 
 
 
@@ -99,10 +96,13 @@ public class EnemyProperty : MonoBehaviour
 
     private void Update()
     {
+        // checks if ship is dead or not
         if (this._health <= 0)
         {
             Destroy(gameObject);
         }
+        
+        // moves ship down 
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(0, -0.5f);
         
