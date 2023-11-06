@@ -51,15 +51,6 @@ public class EnemyProperty : MonoBehaviour
         }
     }
 
-
-
-
-
-
-
-
-
-
     private void Start()
     {
        if(_tier == 1)
@@ -83,12 +74,6 @@ public class EnemyProperty : MonoBehaviour
         
         this._health = this._maxHealth;
         StartCoroutine(SpawnProjectile()); // starts a curoutine so bullets can be shot at random intervals
-
-
-
-
-
-
 
 
 
