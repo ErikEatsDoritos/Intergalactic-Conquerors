@@ -11,10 +11,10 @@ public class Spawner : MonoBehaviour
     private GameObject Tier1;
     [SerializeField]
     private GameObject Tier2;
-    private float _xAxis; 
+    private float _xAxis;
     private int _randomRoll;
-    private float _SpawnOffset;
-    
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
         StartCoroutine(SpawnGameObjects()); // StartCorutine allows to call the delayed function 
         _randomRoll = Random.Range(1, 4);
         _xAxis = Random.Range(-8f, 8f);
-        _SpawnOffset = Random.Range(-2f, 2f);
+
     }
 
     public float Get_xAxis()
@@ -32,8 +32,8 @@ public class Spawner : MonoBehaviour
 
     public void Set_xAxis(float value)
     {
-        
-        _xAxis = value + _SpawnOffset;
+
+        _xAxis = value;
     }
 
     public void FlipCoin(int value)
@@ -43,40 +43,55 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnGameObjects() // IEnumerator allows for methods to be paused and delayed
     {
-       
-        
 
 
-        while (true) 
+
+
+        while (true)
         {
-            
+
             yield return new WaitForSeconds(Random.Range(2, 5)); // one yeild statement is needed for the coroutine to work
-            
-            if (_randomRoll == 1) 
-            { 
-                Instantiate(Tier1, new Vector2(_xAxis, 6), Quaternion.identity);
-                Debug.Log("Rolled 1");
+            Vector2 EnemyPos = transform.position;
+            Collider2D CollisionWithEnemy = Physics2D.OverlapCircle(EnemyPos, 5, LayerMask.GetMask("EnemyLayer"));
+            if (CollisionWithEnemy == true)
+            {
+                if (_xAxis <= 8 && _xAxis >= 0)
+                {
+                    _xAxis -= 2;
+                }
+                else if (_xAxis <= 0 && _xAxis >= -8)
+                {
+                    _xAxis += 2;
+                }
+
+
+                if (_randomRoll == 1)
+                {
+                    Instantiate(Tier1, new Vector2(_xAxis, 6), Quaternion.identity);
+                    Debug.Log("Rolled 1");
+                }
+                else if (_randomRoll == 2)
+                {
+                    Instantiate(Tier2, new Vector2(_xAxis, 6), Quaternion.identity);
+                    Debug.Log("Rolled 2");
+                }
+                else if (_randomRoll == 3)
+                {
+                    Instantiate(Tier3, new Vector2(_xAxis, 6), Quaternion.identity);
+                    Debug.Log("Rolled 3");
+                }
+                Set_xAxis(Random.Range(-10f, 10f));
+                FlipCoin(Random.Range(1, 4));
+                Debug.Log("called method");
             }
-            else if (_randomRoll == 2) 
-            { 
-                Instantiate(Tier2, new Vector2(_xAxis, 6), Quaternion.identity);
-                Debug.Log("Rolled 2");
-            }
-            else if (_randomRoll == 3) 
-            { 
-                Instantiate(Tier3, new Vector2(_xAxis, 6), Quaternion.identity);
-                Debug.Log("Rolled 3");
-            }
-            _SpawnOffset = Random.Range(-2f, 2f);
-            Set_xAxis(Random.Range(-10f, 10f));
-            FlipCoin(Random.Range(1, 4));
-            Debug.Log("called method");
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        // You can add any necessary update logic here
-    }
 }
+
+
+
+
+
+
+
