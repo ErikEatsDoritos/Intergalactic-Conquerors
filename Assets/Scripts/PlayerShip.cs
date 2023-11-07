@@ -122,6 +122,7 @@ public class PlayerShip : MonoBehaviour
     {
         Debug.Log("You're dead");
         Destroy(gameObject);
+
         
     }
 
