@@ -5,8 +5,6 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Windows;
-using UnityEngine.UI;
-using TMPro;
 
 [System.Serializable]
 public class EnemyProperty : MonoBehaviour
@@ -19,9 +17,7 @@ public class EnemyProperty : MonoBehaviour
     private int _maxHealth;
     [SerializeField()]
     private int _tier;
-
-    private int _score = 0;
-    [SerializeField] private TextMeshPro _scoreText;
+    private Animator Anim;
 
 
     public void TakeDmg(int dmg)
@@ -45,6 +41,15 @@ public class EnemyProperty : MonoBehaviour
         }
         
     }
+
+    IEnumerator DeathAnimation()
+    {
+        Anim.SetBool("IsDead", true);
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
+
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -76,8 +81,10 @@ public class EnemyProperty : MonoBehaviour
             _dmg = 3;
 
         }
-        
+        rb = GetComponent<Rigidbody2D>();
+        Anim = GetComponent<Animator>();
         this._health = this._maxHealth;
+
         StartCoroutine(SpawnProjectile()); // starts a curoutine so bullets can be shot at random intervals
 
 
@@ -89,13 +96,15 @@ public class EnemyProperty : MonoBehaviour
         // checks if ship is dead or not
         if (this._health <= 0)
         {
-            Destroy(gameObject);
-            _score += 1;
-            _scoreText.text = "Score: " + _score;
+            
+            StartCoroutine(DeathAnimation());   
+            
+            
+
         }
         
         // moves ship down 
-        rb = GetComponent<Rigidbody2D>();
+        
         rb.velocity = new Vector2(0, -0.5f);
         
 
