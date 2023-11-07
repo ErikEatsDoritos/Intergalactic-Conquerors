@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aff9a8f5cf38334896c393136c235a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedGemPowerUp: {fileID: 1743122031388004593, guid: 29273aa9c73a45947a19ac245312842c, type: 3}
-  _healthGemPowerUp: {fileID: 1734745956312458134, guid: f57a3cae65ca43447af8493e7241ee0d, type: 3}
+  _speedGemPowerUp: {fileID: 1734745956312458134, guid: da46b14c6d4c560458e6780ab2e3c0a8, type: 3}
+  _healthGemPowerUp: {fileID: 1743122031388004593, guid: ea317516287a3f547975fe12ace1c21c, type: 3}
 --- !u!4 &120587960
 Transform:
   m_ObjectHideFlags: 0
