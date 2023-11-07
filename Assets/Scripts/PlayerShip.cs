@@ -19,6 +19,8 @@ public class PlayerShip : MonoBehaviour
     private float x;
     private float y;
 
+    [SerializeField] private AudioSource _bulletSoundEffect;
+
     //public PlayerShip(float speed)
     //{
         //Speed = speed;
@@ -43,6 +45,7 @@ public class PlayerShip : MonoBehaviour
          bulletRb = bulletObject.GetComponent<Rigidbody2D>();
          bulletRb.AddForce(transform.up * bulletClass.GetSpeed());
          Debug.Log("Pew");
+         _bulletSoundEffect.Play();
        
     }
 
