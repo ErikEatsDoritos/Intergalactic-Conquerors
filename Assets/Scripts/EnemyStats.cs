@@ -5,6 +5,8 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Windows;
+using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 public class EnemyProperty : MonoBehaviour
@@ -17,6 +19,9 @@ public class EnemyProperty : MonoBehaviour
     private int _maxHealth;
     [SerializeField()]
     private int _tier;
+
+    private int _score = 0;
+    [SerializeField] private TextMeshPro _scoreText;
 
 
     public void TakeDmg(int dmg)
@@ -85,6 +90,8 @@ public class EnemyProperty : MonoBehaviour
         if (this._health <= 0)
         {
             Destroy(gameObject);
+            _score += 1;
+            _scoreText.text = "Score: " + _score;
         }
         
         // moves ship down 
