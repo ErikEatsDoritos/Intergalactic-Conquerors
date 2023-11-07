@@ -24,13 +24,13 @@ public class PowerUpSpawner : MonoBehaviour
         //    SpawnPowerUp();
         //}
 
-        //int count = 0;
+        int count = 0;
 
-        //while (count < 6)
-        //{
-        //    SpawnItem();
-        //    count++;
-        //}
+        while (count < 6)
+        {
+            SpawnPowerUp();
+            count++;
+        }
 
         //if (scene.buildIndex == 1)
         //{
