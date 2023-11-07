@@ -20,6 +20,7 @@ public class PlayerShip : MonoBehaviour
     private float y;
 
     [SerializeField] private AudioSource _bulletSoundEffect;
+    [SerializeField] private AudioSource _shipDamagedSoundEffect;
 
     //public PlayerShip(float speed)
     //{
@@ -94,6 +95,7 @@ public class PlayerShip : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        _shipDamagedSoundEffect.Play();
         this._health -= damage;
 
         if (this._health < 0) {
