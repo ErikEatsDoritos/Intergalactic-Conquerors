@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerShip : MonoBehaviour
 {
@@ -122,7 +123,7 @@ public class PlayerShip : MonoBehaviour
     {
         Debug.Log("You're dead");
         Destroy(gameObject);
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         
     }
 
