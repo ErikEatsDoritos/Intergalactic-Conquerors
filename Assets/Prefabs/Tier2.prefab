@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 971879468984109875}
   - component: {fileID: 5095440875663070996}
   - component: {fileID: 9212781564140966366}
+  - component: {fileID: -6579323224040801523}
   m_Layer: 0
   m_Name: Tier2
   m_TagString: Enemy
@@ -173,3 +174,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8535753929000865758, guid: 6dae99a1cd83b4348844c9e62da3af59, type: 3}
   _tier: 2
+--- !u!114 &-6579323224040801523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380129195739872657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d112ae20acf457a4f8079f2dc361c629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
