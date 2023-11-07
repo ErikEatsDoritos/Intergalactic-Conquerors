@@ -11,11 +11,11 @@ public class PlayerShip : MonoBehaviour
     public GameObject bulletPrefab;
     private Transform playerTransform;
     private float _speed = 5;
-    private int _health = 1;
+    private int _health = 10;
     private float fireSpeed = 1.0f;
     private float nextFire = 0.0f;
     private Vector3 _movement;
-    private bool _isAlive;
+    private bool _isAlive = true;
     private float x;
     private float y;
 
@@ -57,6 +57,10 @@ public class PlayerShip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_isAlive == false) {
+            IsDead();
+        }
+
         //This way uses translate
         if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Horizontal") < 0)
         {
@@ -68,6 +72,7 @@ public class PlayerShip : MonoBehaviour
             nextFire = Time.time + fireSpeed;
             Shoot();
         }
+
         //Debug.Log(x);
         
 
@@ -106,6 +111,13 @@ public class PlayerShip : MonoBehaviour
     public int GetHealth()
     {
         return _health;
+    }
+
+    public void IsDead()
+    {
+        Debug.Log("You're dead");
+        Destroy(gameObject);
+        
     }
 
     //Upon an enemy object hitting the main ship, I want to get the class of the enemy object, whether it be a bullet or an enemy, and access its attributes
