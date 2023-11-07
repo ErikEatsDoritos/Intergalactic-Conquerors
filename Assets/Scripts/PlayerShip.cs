@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class PlayerShip : MonoBehaviour
 {
-    private Color color;
-    private SpriteRenderer sr;
-    private Bullet bulletClass;
-    private Rigidbody2D bulletRb;
-    public GameObject bulletPrefab;
-    private Transform playerTransform;
+    private Color _color;
+    private SpriteRenderer _sr;
+    private Bullet _bulletClass;
+    private Rigidbody2D _bulletRb;
+    public GameObject BulletPrefab;
+    private Transform _playerTransform;
     private float _speed = 5;
     private int _health = 1;
-    private float fireSpeed = 1.0f;
-    private float nextFire = 0.0f;
+    private float _fireSpeed = 1.0f;
+    private float _nextFire = 0.0f;
     private Vector3 _movement;
     private bool _isAlive;
-    private float x;
-    private float y;
+    private float _x;
+    private float _y;
 
     //public PlayerShip(float speed)
     //{
@@ -29,19 +29,19 @@ public class PlayerShip : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerTransform = GetComponent<Transform>();
-        sr = GetComponent<SpriteRenderer>();
-        bulletClass = bulletPrefab.GetComponent<Bullet>();
+        _playerTransform = GetComponent<Transform>();
+        _sr = GetComponent<SpriteRenderer>();
+        _bulletClass = BulletPrefab.GetComponent<Bullet>();
 
     }
 
     public void Shoot()
     {
-         x = playerTransform.position.x;
-         y = playerTransform.position.y;
-         GameObject bulletObject = Instantiate(bulletPrefab, new Vector3(x, y, 0), playerTransform.rotation);
-         bulletRb = bulletObject.GetComponent<Rigidbody2D>();
-         bulletRb.AddForce(transform.up * bulletClass.GetSpeed());
+         _x = _playerTransform.position.x;
+         _y = _playerTransform.position.y;
+         GameObject bulletObject = Instantiate(BulletPrefab, new Vector3(_x, _y, 0), _playerTransform.rotation);
+         _bulletRb = bulletObject.GetComponent<Rigidbody2D>();
+         _bulletRb.AddForce(transform.up * _bulletClass.GetSpeed());
          Debug.Log("Pew");
        
     }
@@ -50,7 +50,7 @@ public class PlayerShip : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         _movement = new Vector3(x, 0, 0);
-        playerTransform.Translate(_movement * _speed * Time.deltaTime);
+        _playerTransform.Translate(_movement * _speed * Time.deltaTime);
     }
 
 
@@ -64,9 +64,9 @@ public class PlayerShip : MonoBehaviour
             Move();
         }
         
-        if (Input.GetKeyDown("space") && Time.time > nextFire)
+        if (Input.GetKeyDown("space") && Time.time > _nextFire)
         {
-            nextFire = Time.time + fireSpeed;
+            _nextFire = Time.time + _fireSpeed;
             Shoot();
         }
         //Debug.Log(x);
@@ -99,9 +99,9 @@ public class PlayerShip : MonoBehaviour
     public IEnumerator ChangeColor()
     {
         Debug.Log("color");
-        sr.color = Color.red;
+        _sr.color = Color.red;
         yield return new WaitForSeconds(0.20f);
-        sr.color = Color.white;
+        _sr.color = Color.white;
     }
 
     public int GetHealth()
