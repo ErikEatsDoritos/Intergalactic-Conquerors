@@ -916,13 +916,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &6505975463440150937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5213962302829625354, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: SpeedGemPowerUp
+      value: 
+      objectReference: {fileID: 6321946442297498934, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+    - target: {fileID: 5213962302829625354, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: HealthGemPowerUp
+      value: 
+      objectReference: {fileID: 5829940335586088162, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+    - target: {fileID: 5213962302829625354, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: _speedGemPowerUp
+      value: 
+      objectReference: {fileID: 6321946442297498934, guid: 506001acc3661a54db3cf3796b5bf64d, type: 3}
+    - target: {fileID: 5213962302829625354, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: _healthGemPowerUp
+      value: 
+      objectReference: {fileID: 5829940335586088162, guid: 80da653199efbcb48b1fb8d9848830d2, type: 3}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.634194
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7378223
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9089956
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533547346974373575, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414797716951910074, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
+      propertyPath: m_Name
+      value: PowerUp Spawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 213bf699e43fb3141821718b606e6e77, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 1915792879}
   - {fileID: 1402533027}
+  - {fileID: 1915792879}
   - {fileID: 1713784299}
+  - {fileID: 6505975463440150937}
   - {fileID: 1065153307}
   - {fileID: 265237003}
