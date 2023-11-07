@@ -15,7 +15,7 @@ public class PowerUpSpawner : MonoBehaviour
         //While the gameplay is active, powerups will continue to spawn
         Scene scene = SceneManager.GetActiveScene();
         
-        while (scene.buildIndex == 1)
+        if (scene.buildIndex == 1)
         {
             SpawnItem();
         }
