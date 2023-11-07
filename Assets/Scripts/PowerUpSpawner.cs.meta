@@ -4,8 +4,8 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - _speedGemPowerUp: {fileID: 2250094082061916271, guid: b5807ae97ca3ce349a13e90fa3c7d47b, type: 3}
-  - _healthGemPowerUp: {fileID: 4777523049458918022, guid: 5c98f6a48a869e74c8c5edcc4313fd61, type: 3}
+  - _speedGemPowerUp: {fileID: 6321946442297498934, guid: f57a3cae65ca43447af8493e7241ee0d, type: 3}
+  - _healthGemPowerUp: {fileID: 5829940335586088162, guid: 29273aa9c73a45947a19ac245312842c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

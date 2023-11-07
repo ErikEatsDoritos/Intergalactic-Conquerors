@@ -7,8 +7,8 @@ public class PowerUpSpawner : MonoBehaviour
 {
     [SerializeField] GameObject _speedGemPowerUp;
     [SerializeField] GameObject _healthGemPowerUp;
-    //"[SerializeField]" is used to make the private variables accessible within the Unity editor without making them public.
-    private float _powerUpMoveSpeed = 2f;
+    //"[SerializeField]" is used to make the private variables accessible within the Unity inspector without making them public.
+    private float _powerUpMoveSpeed = 2f; //Private so it cannot be edited outside the PowerUp Spawner class
     
     // Start is called before the first frame update
     void Start()
