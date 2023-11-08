@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 //using UnityEngine.Windows;
 //using JetBrains.Annotations;
 
-public class PowerUpSpawner : MonoBehaviour
+public class GemSpawner : MonoBehaviour
 {
     //"[SerializeField]" is used to make the private variables accessible within the Unity inspector without making them public.
-    [SerializeField] private GameObject _speedGemPowerUp;
-    [SerializeField] private GameObject _healthGemPowerUp;
+    [SerializeField] GameObject _blueGem;
+    [SerializeField] GameObject _greenGem;
     private int _randNumber;
     
     // Start is called before the first frame update
@@ -29,25 +29,25 @@ public class PowerUpSpawner : MonoBehaviour
         {
 
             yield return new WaitForSeconds(10f);
-            SpawnPowerUp();
+            SpawnGem();
             SceneManager.GetActiveScene();
         }
     }
 
 
     // Defining the SpawnItem method vvv
-    void SpawnPowerUp()
+    void SpawnGem()
     {
         // 1st parameter: game object to be created, 2nd parameter: location of the object (Vector2 means only the x- and y-axis), 3rd parameter: object is rotated to match the scene inside the game
         _randNumber = Random.Range(1, 3);
 
         if (_randNumber == 1)
         {
-          Instantiate(_speedGemPowerUp, new Vector2(Random.Range(8.5f, -8.5f), 4.5f), Quaternion.identity);
+          Instantiate(_blueGem, new Vector2(Random.Range(8.5f, -8.5f), 4.5f), Quaternion.identity);
         }
         else
         {
-            Instantiate(_healthGemPowerUp, new Vector2(Random.Range(8.5f, -8.5f), 4.5f), Quaternion.identity);
+            Instantiate(_greenGem, new Vector2(Random.Range(8.5f, -8.5f), 4.5f), Quaternion.identity);
         }
         
     }
