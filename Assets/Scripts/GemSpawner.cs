@@ -2,10 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-//using System.Runtime.InteropServices.WindowsRuntime;
-//using Unity.VisualScripting;
-//using UnityEngine.Windows;
-//using JetBrains.Annotations;
 
 public class GemSpawner : MonoBehaviour
 {
@@ -17,12 +13,12 @@ public class GemSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Spawn()); // Coroutine for powerups to spawn -> coroutines are used to create a sequence of events over time
+        StartCoroutine(Spawn()); // Coroutine for gems to spawn -> coroutines are used to create a sequence of events over time
     }
 
     IEnumerator Spawn()
     {
-        //While the gameplay is active, powerups will continue to spawn
+        //While the gameplay is active, gems will continue to spawn
         Scene scene = SceneManager.GetActiveScene();
 
         while (scene.buildIndex == 1)
@@ -35,7 +31,7 @@ public class GemSpawner : MonoBehaviour
     }
 
 
-    // Defining the SpawnItem method vvv
+    // Defining the SpawnGem method vvv
     void SpawnGem()
     {
         // 1st parameter: game object to be created, 2nd parameter: location of the object (Vector2 means only the x- and y-axis), 3rd parameter: object is rotated to match the scene inside the game
@@ -43,7 +39,7 @@ public class GemSpawner : MonoBehaviour
 
         if (_randNumber == 1)
         {
-          Instantiate(_blueGem, new Vector2(Random.Range(8.5f, -8.5f), 4.5f), Quaternion.identity);
+            Instantiate(_blueGem, new Vector2(Random.Range(8.5f, -8.5f), 4.5f), Quaternion.identity);
         }
         else
         {

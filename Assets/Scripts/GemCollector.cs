@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PowerUpCollector : MonoBehaviour
+public class GemCollector : MonoBehaviour
 {
     private int _score = 0;
     [SerializeField] Text _scoreText;

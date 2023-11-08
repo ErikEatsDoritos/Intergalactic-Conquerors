@@ -231,8 +231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aff9a8f5cf38334896c393136c235a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blueGem: {fileID: 2044599191916191678, guid: f57a3cae65ca43447af8493e7241ee0d, type: 3}
-  _greenGem: {fileID: 6638142575450981588, guid: 29273aa9c73a45947a19ac245312842c, type: 3}
+  _blueGem: {fileID: 6321946442297498934, guid: f57a3cae65ca43447af8493e7241ee0d, type: 3}
+  _greenGem: {fileID: 5829940335586088162, guid: 29273aa9c73a45947a19ac245312842c, type: 3}
 --- !u!4 &120587960
 Transform:
   m_ObjectHideFlags: 0

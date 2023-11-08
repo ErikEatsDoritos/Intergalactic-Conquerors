@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUpMovement : MonoBehaviour
+public class GemMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     
