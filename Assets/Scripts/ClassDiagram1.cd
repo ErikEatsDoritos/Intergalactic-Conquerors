@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BGScroll">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAECAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\BGScroll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bullet">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" ManuallyRouted="true">
+      <Path>
+        <Point X="6.25" Y="1.441" />
+        <Point X="6.25" Y="2.05" />
+        <Point X="2.444" Y="2.05" />
+        <Point X="2.444" Y="4.424" />
+        <Point X="3.5" Y="4.424" />
+        <Point X="3.5" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAABAACAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndMenu">
+    <Position X="4.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EndMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyShip">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABIACEAAAAAAAAAAAAAAMAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyShip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyProperty">
+    <Position X="8" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAACEAAgAEACAAEAQAAMAAAAACAAAAAAEQBAQ=</HashCode>
+      <FileName>Assets\Scripts\EnemyStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewBehaviourScript">
+    <Position X="6.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Kill box.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerShip">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" ManuallyRouted="true">
+      <Path>
+        <Point X="6.25" Y="1.441" />
+        <Point X="6.25" Y="2.05" />
+        <Point X="2.506" Y="2.05" />
+        <Point X="2.506" Y="4.424" />
+        <Point X="1.75" Y="4.424" />
+        <Point X="1.75" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IAQAFCAQAKEABgAAAQAAEQAAQAAAIgCABABwgCAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerShip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PowerUpSpawner">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAICAAAAAEAAEAAAAAAAAAABAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PowerUpSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projectile">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAEAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAABAgAACAAAAAAAAAAQAAAAAAAABAAABQABIAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StartMenu" Collapsed="true">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\StartMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
