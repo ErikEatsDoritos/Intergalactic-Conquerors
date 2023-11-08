@@ -28,6 +28,15 @@ public class PlayerShip : MonoBehaviour
         //Speed = speed;
     //}
 
+    public float GetSpeed()
+    {
+        return this._speed;
+    }
+
+    public void SetSpeed(float speed)
+    {
+        this._speed = speed;
+    }
 
 
     // Start is called before the first frame update

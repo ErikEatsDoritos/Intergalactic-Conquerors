@@ -43,17 +43,12 @@ public class PowerUpSpawner : MonoBehaviour
 
         if (_randNumber == 1)
         {
-          Instantiate(_speedGemPowerUp, new Vector2(Random.Range(8.5f, -8.5f), 4), Quaternion.identity);
+          Instantiate(_speedGemPowerUp, new Vector2(Random.Range(8.5f, -8.5f), 4.5f), Quaternion.identity);
         }
         else
         {
-            Instantiate(_healthGemPowerUp, new Vector2(Random.Range(8.5f, -8.5f), 4), Quaternion.identity);
+            Instantiate(_healthGemPowerUp, new Vector2(Random.Range(8.5f, -8.5f), 4.5f), Quaternion.identity);
         }
-        
-    }
-
-    void Update()
-    {
         
     }
 
