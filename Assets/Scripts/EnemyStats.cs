@@ -20,9 +20,8 @@ public class EnemyProperty : MonoBehaviour
     private int _tier;
     private Animator Anim;
 
-    private int _score = 0;
-    [SerializeField] private Text _scoreText;
-
+    //private int _score = 0;
+    //[SerializeField] private Text _scoreText;
 
     public void TakeDmg(int dmg)
     {
@@ -102,8 +101,8 @@ public class EnemyProperty : MonoBehaviour
         {
             
             StartCoroutine(DeathAnimation());
-            _score += 1;
-            _scoreText.text = "Score: " + _score;
+            //_score += 1;
+            //_scoreText.text = "Score: " + _score;
 
         }
         

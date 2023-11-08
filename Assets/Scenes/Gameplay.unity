@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -661,7 +661,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0df20ad0c176b14ca7b376426d5051a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerShip: {fileID: 0}
+  _scoreText: {fileID: 0}
+  _speedGemPowerUp: {fileID: 0}
+  _healthGemPowerUp: {fileID: 0}
 --- !u!1 &477557548
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +850,53 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &889570179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889570181}
+  - component: {fileID: 889570180}
+  m_Layer: 0
+  m_Name: PowerUpCollectorObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &889570180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889570179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0df20ad0c176b14ca7b376426d5051a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreText: {fileID: 111871240}
+  _speedGemPowerUp: {fileID: 6321946442297498934, guid: f57a3cae65ca43447af8493e7241ee0d, type: 3}
+  _healthGemPowerUp: {fileID: 5829940335586088162, guid: 29273aa9c73a45947a19ac245312842c, type: 3}
+--- !u!4 &889570181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889570179}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1472,3 +1521,4 @@ SceneRoots:
   - {fileID: 265237003}
   - {fileID: 1121986473}
   - {fileID: 219189661}
+  - {fileID: 889570181}
