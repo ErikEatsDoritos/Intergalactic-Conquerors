@@ -5,12 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Spawner : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject Tier3;
-    [SerializeField]
-    private GameObject Tier1;
-    [SerializeField]
-    private GameObject Tier2;
+    
+    public GameObject Tier3;
+    public GameObject Tier1;
+    public GameObject Tier2;
     private float _xAxis;
     private int _randomRoll;
 
@@ -27,7 +25,6 @@ public class Spawner : MonoBehaviour
 
     public void Set_xAxis(float value)
     {
-
         _xAxis = value;
     }
 
@@ -56,7 +53,7 @@ public class Spawner : MonoBehaviour
             Instantiate(Tier1, new Vector2(_xAxis, 6), Quaternion.identity);
             Debug.Log("Rolled 1");
         }
-                else if (_randomRoll == 2)
+        else if (_randomRoll == 2)
         {
             Instantiate(Tier2, new Vector2(_xAxis, 6), Quaternion.identity);
             Debug.Log("Rolled 2");

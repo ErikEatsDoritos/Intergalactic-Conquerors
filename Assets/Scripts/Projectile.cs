@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour
         rb.velocity = new Vector2(0, -2f);
     }
 
-    private void OntriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Boundary"))
         {

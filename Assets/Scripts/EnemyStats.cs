@@ -10,14 +10,11 @@ using UnityEngine.UI;
 [System.Serializable]
 public class EnemyProperty : MonoBehaviour
 {
-    [SerializeField()]
-    private GameObject Bullet;
+    public GameObject Bullet;
     private Rigidbody2D rb;
     private int _health;
     private int _dmg;
-    private int _maxHealth;
-    [SerializeField()]
-    private int _tier;
+    public int _tier;
     private Animator Anim;
 
     //private int _score = 0;
@@ -73,25 +70,25 @@ public class EnemyProperty : MonoBehaviour
     {
        if(_tier == 1)
         {
-            _maxHealth = 1;
+            _health = 1;
             _dmg = 1;
 
         }
        else if (_tier == 2)
         {
-            _maxHealth = 2;
-            _dmg = 2;
+            _health = 2;
+            _dmg = 1;
 
         }
        else if (_tier == 3)
         {
-            _maxHealth = 3;
-            _dmg = 3;
+            _health = 3;  
 
         }
+        _dmg = 1;
         rb = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
-        this._health = this._maxHealth;
+        
 
         StartCoroutine(SpawnProjectile()); // starts a curoutine so bullets can be shot at random intervals
 

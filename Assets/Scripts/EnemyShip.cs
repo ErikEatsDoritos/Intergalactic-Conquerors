@@ -5,14 +5,14 @@ using UnityEngine;
 public class EnemyShip : MonoBehaviour
 {
     private int _damage;
-    private int _health = 100;
+    
     private GameObject _playerShip;
     private PlayerShip _playerInstance;
     private EnemyProperty _enemyProperty;
     public GameObject tier1;
     
     private EnemyProperty _enenmyStatsClass;
-    private int _enemyDmg; 
+    
 
 
 
@@ -20,7 +20,7 @@ public class EnemyShip : MonoBehaviour
     private void Start()
     {
         _enenmyStatsClass = tier1.GetComponent<EnemyProperty>();
-        _enemyDmg = _enenmyStatsClass.GetDmg();
+        _damage = _enenmyStatsClass.GetDmg();
 
         // gets values from enemy damage scrip
     }
@@ -35,9 +35,9 @@ public class EnemyShip : MonoBehaviour
     public void Attack()
     {
         
-        _playerInstance.TakeDamage(_enemyDmg);
+        _playerInstance.TakeDamage(_damage);
         StartCoroutine(_playerInstance.ChangeColor());
-        Debug.Log(_enemyDmg);
+        Debug.Log(_damage);
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
