@@ -16,7 +16,7 @@ public class EnemyShip : MonoBehaviour
     {
 
 
-                                                        // gets values from enemy damage script
+          // gets values from enemy damage script
         
     }
 
