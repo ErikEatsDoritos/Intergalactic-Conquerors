@@ -22,7 +22,13 @@ public class EnemyShip : MonoBehaviour
         _enenmyStatsClass = tier1.GetComponent<EnemyProperty>();
         _damage = _enenmyStatsClass.GetDmg();
 
+<<<<<<< HEAD
         // gets values from enemy damage scrip
+=======
+
+          // gets values from enemy damage script
+        
+>>>>>>> erik-branch
     }
 
     // Update is called once per frame
