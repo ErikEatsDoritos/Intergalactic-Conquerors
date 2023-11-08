@@ -5,6 +5,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Windows;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class EnemyProperty : MonoBehaviour
@@ -19,6 +20,8 @@ public class EnemyProperty : MonoBehaviour
     private int _tier;
     private Animator Anim;
 
+    //private int _score = 0;
+    //[SerializeField] private Text _scoreText;
 
     public void TakeDmg(int dmg)
     {
@@ -72,13 +75,13 @@ public class EnemyProperty : MonoBehaviour
        else if (_tier == 2)
         {
             _maxHealth = 2;
-            _dmg = 2;
+            _dmg = 1;
 
         }
        else if (_tier == 3)
         {
             _maxHealth = 3;
-            _dmg = 3;
+            _dmg = 1;
 
         }
         rb = GetComponent<Rigidbody2D>();
@@ -97,9 +100,9 @@ public class EnemyProperty : MonoBehaviour
         if (this._health <= 0)
         {
             
-            StartCoroutine(DeathAnimation());   
-            
-            
+            StartCoroutine(DeathAnimation());
+            //_score += 1;
+            //_scoreText.text = "Score: " + _score;
 
         }
         
