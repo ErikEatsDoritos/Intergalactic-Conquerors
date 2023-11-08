@@ -75,13 +75,13 @@ public class EnemyProperty : MonoBehaviour
        else if (_tier == 2)
         {
             _maxHealth = 2;
-            _dmg = 2;
+            _dmg = 1;
 
         }
        else if (_tier == 3)
         {
             _maxHealth = 3;
-            _dmg = 3;
+            _dmg = 1;
 
         }
         rb = GetComponent<Rigidbody2D>();

@@ -5,6 +5,11 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     private Rigidbody2D rb;
+    public GameObject tier1;
+    public GameObject tier2;
+    public GameObject tier3;
+    private int _damage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +27,6 @@ public class Projectile : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Boundary"))
         {
-
             Destroy(other.gameObject);
         }
         Debug.Log("Called Method");

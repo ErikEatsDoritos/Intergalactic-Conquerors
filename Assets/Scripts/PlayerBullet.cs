@@ -14,14 +14,4 @@ public class Bullet : MonoBehaviour
         return _speed;
     }
 
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
