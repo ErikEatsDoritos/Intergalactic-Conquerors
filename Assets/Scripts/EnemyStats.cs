@@ -28,6 +28,11 @@ public class EnemyProperty : MonoBehaviour
         _health -= dmg;
     }
 
+    public int GetDmg() 
+    { 
+        return _dmg;  
+    }
+
     public void Attack()
     {
         Vector2 EnemyPos = transform.position;
@@ -75,13 +80,13 @@ public class EnemyProperty : MonoBehaviour
        else if (_tier == 2)
         {
             _maxHealth = 2;
-            _dmg = 1;
+            _dmg = 2;
 
         }
        else if (_tier == 3)
         {
             _maxHealth = 3;
-            _dmg = 1;
+            _dmg = 3;
 
         }
         rb = GetComponent<Rigidbody2D>();
