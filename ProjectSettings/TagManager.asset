@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - SpeedPowerUp
   - HealthPowerUp
+  - MainShip
   layers:
   - Default
   - TransparentFX

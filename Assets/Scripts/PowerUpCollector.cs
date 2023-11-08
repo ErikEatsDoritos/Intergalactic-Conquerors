@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class PowerUpCollector : MonoBehaviour
 {
-    PlayerShip neededSpeed;
+    [SerializeField] private PlayerShip playerShip;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        
         if (other.CompareTag("SpeedPowerUp"))
         {
             //neededSpeed = GameObject.FindGameObjectWithTag("MainShip").GetComponent<PlayerShip>();
-            
-            //PlayerShip.GetSpeed();
-            //PlayerShip.SetSpeed(20f);
-            //Do not know how to make this work^^^
+
             Destroy(other.gameObject);
+            playerShip.GetSpeed();
+            playerShip.SetSpeed(20f);
+            //Do not know how to make this work^^^
         }
         else if (other.CompareTag("HealthPowerUp"))
         {
             Destroy(other.gameObject);
+            
+            int newHealth = playerShip.GetHealth() + 2;
+            playerShip.SetHealth(newHealth);
         }
     }
 }

@@ -11,8 +11,8 @@ public class PlayerShip : MonoBehaviour
     private Rigidbody2D bulletRb;
     public GameObject bulletPrefab;
     private Transform playerTransform;
-    private float _speed = 5;
-    private int _health = 10;
+    [SerializeField] private float _speed = 5;
+    [SerializeField] private int _health = 10;
     private float fireSpeed = 1.0f;
     private float nextFire = 0.0f;
     private Vector3 _movement;
@@ -36,6 +36,11 @@ public class PlayerShip : MonoBehaviour
     public void SetSpeed(float speed)
     {
         this._speed = speed;
+    }
+
+    public void SetHealth(int health)
+    {
+        this._health = health;
     }
 
 

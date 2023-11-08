@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 265237007}
   m_Layer: 0
   m_Name: MainShip
-  m_TagString: Untagged
+  m_TagString: MainShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,6 +351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6590904292857718837, guid: d115575c4ee655f49bae98d8fe4098e2, type: 3}
+  _speed: 5
+  _health: 10
   _bulletSoundEffect: {fileID: 265237005}
   _shipDamagedSoundEffect: {fileID: 265237006}
 --- !u!212 &265237002
@@ -659,6 +661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0df20ad0c176b14ca7b376426d5051a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerShip: {fileID: 0}
 --- !u!1 &477557548
 GameObject:
   m_ObjectHideFlags: 0
