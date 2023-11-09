@@ -14,7 +14,7 @@ public class EnemyProperty : MonoBehaviour
     private Rigidbody2D rb;
     private int _health;
     private int _dmg;
-    public int _tier;
+    public int Tier;
     private Animator _anim;
    
 
@@ -67,23 +67,23 @@ public class EnemyProperty : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void Start()
     {
-       if(_tier == 1)
+       if(Tier == 1)
         {
             _health = 1;
             _dmg = 1;
 
 
         }
-       else if (_tier == 2)
+       else if (Tier == 2)
         {
             _health = 2;
             _dmg = 2;
 
 
         }
-       else if (_tier == 3)
+       else if (Tier == 3)
         {
             _health = 3;
             _dmg = 3;
@@ -98,14 +98,13 @@ public class EnemyProperty : MonoBehaviour
 
     }
 
-    private void Update()
+    public void Update()
     {
         // checks if ship is dead or not
         if (this._health <= 0)
         {
             
-            StartCoroutine(DeathAnimation());
-            
+            StartCoroutine(DeathAnimation());    
 
         }
         

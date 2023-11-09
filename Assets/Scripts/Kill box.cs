@@ -13,13 +13,9 @@ public class NewBehaviourScript : MonoBehaviour
         if (collision.tag == "Enemy")
         {
             Destroy(collision.gameObject);
-            Debug.Log("Destoryed Ship");
+            
         }
-        else if (collision.tag == "Projectile")
-        {
-            Destroy(collision.gameObject);
-            Debug.Log("Destoryed Bullet");
-        }
+       
     }
 
 }
