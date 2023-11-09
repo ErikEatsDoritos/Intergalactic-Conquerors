@@ -15,7 +15,7 @@ public class EnemyProperty : MonoBehaviour
     private int _health;
     private int _dmg;
     public int _tier;
-    private Animator Anim;
+    private Animator _anim;
    
 
 
@@ -50,7 +50,7 @@ public class EnemyProperty : MonoBehaviour
 
     IEnumerator DeathAnimation()
     {
-        Anim.SetBool("IsDead", true);
+        _anim.SetBool("IsDead", true);
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
 
@@ -91,7 +91,7 @@ public class EnemyProperty : MonoBehaviour
         }
         
         rb = GetComponent<Rigidbody2D>();
-        Anim = GetComponent<Animator>();
+        _anim = GetComponent<Animator>();
         StartCoroutine(SpawnProjectile()); // starts a curoutine so bullets can be shot at random intervals
 
 
