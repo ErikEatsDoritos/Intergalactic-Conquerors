@@ -16,9 +16,10 @@ public class EnemyProperty : MonoBehaviour
     private int _dmg;
     public int _tier;
     private Animator Anim;
+   
 
-    //private int _score = 0;
-    //[SerializeField] private Text _scoreText;
+
+
 
     public void TakeDmg(int dmg)
     {
@@ -73,23 +74,24 @@ public class EnemyProperty : MonoBehaviour
             _health = 1;
             _dmg = 1;
 
+
         }
        else if (_tier == 2)
         {
             _health = 2;
-            _dmg = 1;
+            _dmg = 2;
+
 
         }
        else if (_tier == 3)
         {
-            _health = 3;  
+            _health = 3;
+            _dmg = 3;
 
         }
-        _dmg = 1;
+        
         rb = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
-        
-
         StartCoroutine(SpawnProjectile()); // starts a curoutine so bullets can be shot at random intervals
 
 
@@ -103,12 +105,10 @@ public class EnemyProperty : MonoBehaviour
         {
             
             StartCoroutine(DeathAnimation());
-            //_score += 1;
-            //_scoreText.text = "Score: " + _score;
+            
 
         }
         
-        // moves ship down 
         
         rb.velocity = new Vector2(0, -0.5f);
         

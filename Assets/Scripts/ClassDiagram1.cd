@@ -7,23 +7,6 @@
       <FileName>Assets\Scripts\BGScroll.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Bullet">
-    <Position X="2.75" Y="4.75" Width="1.5" />
-    <InheritanceLine Type="UnityEngine.MonoBehaviour" ManuallyRouted="true">
-      <Path>
-        <Point X="6.25" Y="1.441" />
-        <Point X="6.25" Y="2.05" />
-        <Point X="2.444" Y="2.05" />
-        <Point X="2.444" Y="4.424" />
-        <Point X="3.5" Y="4.424" />
-        <Point X="3.5" Y="4.75" />
-      </Path>
-    </InheritanceLine>
-    <TypeIdentifier>
-      <HashCode>AAQAAABAACAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\Bullet.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="EndMenu">
     <Position X="4.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
@@ -41,14 +24,14 @@
   <Class Name="EnemyProperty">
     <Position X="8" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQABAAAACEAAgAEACAAEAQAAMAAAAACAAAAAAEQBAQ=</HashCode>
+      <HashCode>AAQAAAAAACEAAAAEACAAEAQAAMAAAAACAAAAAAEQBAQ=</HashCode>
       <FileName>Assets\Scripts\EnemyStats.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NewBehaviourScript">
     <Position X="6.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Kill box.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -65,21 +48,14 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>IAQAFCAQAKEABgAAAQAAEQAAQAAAIgCABABwgCAAAAA=</HashCode>
+      <HashCode>IAQAFCAQAKEABgAAAQAAERAAQAEAIgCABABwgiAAAAA=</HashCode>
       <FileName>Assets\Scripts\PlayerShip.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PowerUpSpawner">
-    <Position X="8" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAIAAICAAAAAEAAEAAAAAAAAAABAAAQAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\PowerUpSpawner.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Projectile">
     <Position X="6.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAACAAAAAEAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAABAACAAAAAEAAAAAAAAAEAAAAAAgAAQAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Projectile.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -90,7 +66,7 @@
       <FileName>Assets\Scripts\Spawner.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="StartMenu" Collapsed="true">
+  <Class Name="StartMenu">
     <Position X="2.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
